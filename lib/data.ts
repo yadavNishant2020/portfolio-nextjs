@@ -2,7 +2,8 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-
+import { FaFacebookF, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaXTwitter } from "react-icons/fa6";
 
 export const links = [
   {
@@ -30,6 +31,28 @@ export const links = [
     hash: "#contact",
   },
 ] as const;
+
+
+
+export const socialMediaLinks = [
+  {
+    url: 'https://www.facebook.com/',
+    icon: React.createElement(FaFacebookF),
+  },
+  {
+    url: 'https://www.instagram.com/',
+    icon: React.createElement(FaInstagram),
+  },
+  {
+    url: 'https://www.linkedin.com/',
+    icon: React.createElement(FaLinkedin),
+  },
+  {
+    url: 'https://www.linkedin.com/',
+    icon: React.createElement(FaXTwitter),
+  },
+] as const;
+
 
 export const experiencesData = [
   {
@@ -69,7 +92,8 @@ export const projectsData = [
     title: "rmtDev",
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],  },
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+  },
   {
     title: "Word Analytics",
     description:
